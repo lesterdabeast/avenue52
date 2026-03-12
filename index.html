@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avenue52</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: right;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        .letters-vertical {
+            display: flex;
+            flex-direction: column; /* stack letters vertically */
+            align-items: flex-start; /* align to left */
+            font-size: 3em; /* bigger letters */
+            font-weight: bold;
+            color: white;
+            gap: 10px; /* spacing between letters */
+            position: fixed; /* stays on the left side when scrolling */
+            top: 100px; /* distance from top of page */
+            left: 20px; /* distance from left edge */
+        }
+        model-viewer {
+            display: block;
+            margin: 50px auto 20px auto; /* center horizontally */
+        }
+        .buttons {
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buttons a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AVENUE52</h1>
+<p>
+Magazine Title: Home Visuals
+</p>
+
+
+
+<!-- 3D magazine -->
+<model-viewer
+    src="avenue52pg1.glb"
+    camera-controls
+    auto-rotate
+    style="width:400px; height:600px;">
+</model-viewer>
+
+<!-- Buttons -->
+<div class="buttons">
+    <a href="https://www.instagram.com/only_LSS" target="_blank">LinkedIN</a>
+    <a href="https://trapcat1440.github.io/VoyagerTheGame/" target="_blank">Order Print</a>
+</div>
+
+</body>
+
+</html>
