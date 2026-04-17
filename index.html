@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Avenue52 Magazine NY </title>
-    
-<div class="buttons">
-    <a href="brandpage.html.htm">Magazine Headshots</a>
-</div>
+    <title>Avenue52 Magazine NY</title>
 
     <!-- Website Icon -->
     <link rel="icon" type="image/png" href="https://i.imghippo.com/files/jla5582WU.jpg">
 
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Model viewer script -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-     <!-- Website Icon -->
-    <link rel="icon" type="image/png" href="https://i.imghippo.com/files/jla5582WU.jpg">
 
     <style>
         body {
@@ -24,36 +19,37 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            text-align: center;
+        }
+
+        /* Title on the right */
+        h1 {
             text-align: right;
+            margin-right: 20px;
         }
-        img {
+
+        /* Logo on the right */
+        .logo {
             display: block;
-            margin: 20px auto;
+            margin: 20px 20px 20px auto;
         }
-        .letters-vertical {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            font-size: 3em;
-            font-weight: bold;
-            color: white;
-            gap: 10px;
-            position: fixed;
-            top: 100px;
-            left: 20px;
-        }
+
         model-viewer {
             display: block;
-            margin: 50px auto 20px auto;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 800px;
+            height: 500px;
         }
+
         .buttons {
             margin: 30px auto;
             display: flex;
             justify-content: center;
             gap: 20px;
         }
+
         .buttons a {
-            display: inline-block;
             padding: 10px 20px;
             background-color: white;
             color: black;
@@ -61,8 +57,26 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
         .buttons a:hover {
             background-color: #ddd;
+        }
+
+        .cta {
+            margin-top: 40px;
+        }
+
+        .cta a {
+            text-decoration: none;
+            font-weight: bold;
+            background: black;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .cta a:hover {
+            background: #333;
         }
     </style>
 </head>
@@ -73,65 +87,33 @@
 
 <p>Magazine Title: Wide Wonder Magazine</p>
 
+<!-- Logo -->
 <img src="https://i.imghippo.com/files/bPc8349ZRY.png" 
      alt="Magazine logo"
-     width="250"
-     height="250">
+     class="logo"
+     width="250">
 
-<!-- 3D magazine -->
-<model-viewer
-    src="widewonder1.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
+<!-- Navigation Button -->
+<div class="buttons">
+    <a href="brandpage.html.htm">Magazine Headshots</a>
+</div>
 
-<model-viewer
-    src="widewonder2.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
-<model-viewer
-    src="widewonder3.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
-<model-viewer
-    src="widewonder4.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
-<model-viewer
-    src="widewonder5.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
-<model-viewer
-    src="widewonder6.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer> 
-<model-viewer
-    src="widewonder7.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
-<model-viewer
-    src="avenue51pg22.glb"
-    camera-controls
-    auto-rotate
-    style="width:800px; height:800px;">
-</model-viewer>
+<!-- 3D magazines -->
+<model-viewer src="widewonder1.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder2.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder3.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder4.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder5.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder6.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="widewonder7.glb" camera-controls auto-rotate></model-viewer>
+<model-viewer src="avenue51pg22.glb" camera-controls auto-rotate></model-viewer>
 
-  <a href="https://buy.stripe.com/test_dRm9AVfxu1YT1V66bsffy00">
-        <p>Print Access</p>
-
+<!-- Purchase Button -->
+<div class="cta">
+    <a href="https://buy.stripe.com/dRmfZafap9cPdGYaFmg7e01">
+        Print Access
+    </a>
+</div>
 
 </body>
 </html>
