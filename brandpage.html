@@ -4,83 +4,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Wide Wonder References</title>
 
 <style>
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    background:#f6f6f6;
-    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f8f9fa;
+    color:#202124;
 }
 
+/* TOP HEADER (Google-like) */
 header{
-    text-align:center;
-    padding:40px 20px;
     background:white;
-    border-bottom:1px solid #ddd;
+    padding:20px;
+    border-bottom:1px solid #e0e0e0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-header img{
-    width:220px;
+.logo{
+    height:32px;
 }
 
-main{
-    max-width:800px;
-    margin:auto;
-    padding:40px 20px;
+/* SEARCH BAR STYLE */
+.search{
+    flex:1;
+    margin:0 20px;
+    max-width:600px;
+    display:flex;
 }
 
-h2{
-    text-align:center;
-    margin-bottom:30px;
-    letter-spacing:2px;
+.search input{
+    width:100%;
+    padding:12px 16px;
+    border:1px solid #dcdcdc;
+    border-radius:24px;
+    outline:none;
+    font-size:14px;
 }
 
-nav ul{
-    list-style:none;
-    padding:0;
+.search input:focus{
+    border-color:#4285f4;
+    box-shadow:0 0 0 2px rgba(66,133,244,0.2);
 }
 
-li{
+/* MAIN LAYOUT */
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+/* NAV LINKS (Google colors accent) */
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    margin-right:15px;
+    text-decoration:none;
+    font-size:14px;
+    color:#5f6368;
+}
+
+nav a:hover{
+    color:#1a73e8;
+}
+
+/* GRID CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+}
+
+/* CARD STYLE */
+.card{
     background:white;
+    border:1px solid #e0e0e0;
+    border-radius:12px;
     padding:18px;
-    margin:10px 0;
-    border-radius:6px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.05);
     transition:0.2s;
 }
 
-li:hover{
-    transform:translateY(-3px);
+.card:hover{
+    border-color:#dadce0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.06);
 }
 
-a{
-    text-decoration:none;
-    color:#333;
-    font-size:18px;
-    display:block;
+h2{
+    font-size:22px;
+    margin:0 0 10px 0;
 }
 
-a:hover{
-    color:#888;
+h3{
+    margin:0 0 8px 0;
+    font-size:16px;
+    color:#202124;
 }
 
-section{
+p{
+    font-size:14px;
+    line-height:1.6;
+    color:#5f6368;
+    margin:0;
+}
+
+/* GOOGLE COLOR BAR ACCENTS */
+.bar{
+    height:4px;
+    width:60px;
+    border-radius:2px;
+    margin-bottom:10px;
+}
+
+.blue{background:#4285f4;}
+.red{background:#ea4335;}
+.yellow{background:#fbbc05;}
+.green{background:#34a853;}
+
+/* SPONSOR */
+.sponsor{
     background:white;
-    padding:25px;
-    margin-top:40px;
-    border-radius:6px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    border:1px solid #e0e0e0;
+    border-radius:12px;
+    padding:16px;
+    margin-bottom:20px;
+    text-align:center;
 }
 
-section h3{
-    margin-top:0;
+.sponsor img{
+    max-width:100%;
 }
 
-html{
-    scroll-behavior:smooth;
+/* RESPONSIVE */
+@media(max-width:800px){
+    .search{
+        display:none;
+    }
 }
 </style>
 </head>
@@ -88,67 +151,78 @@ html{
 <body>
 
 <header>
-<img src="https://i.imghippo.com/files/bPc8349ZRY.png" alt="Home Visuals Logo">
+    <img class="logo" src="https://i.imghippo.com/files/bPc8349ZRY.png" alt="Logo">
+
+    <div class="search">
+        <input type="text" placeholder="Search references...">
+    </div>
 </header>
 
-<main>
+<div class="container">
 
-<h2>Content</h2>
+    <nav>
+        <a href="#jeanprouve">Jean Prouvé</a>
+        <a href="#cassina">Cassina</a>
+        <a href="#usm">USM</a>
+        <a href="#cratebarrel">Crate & Barrel</a>
+        <a href="#arteriors">Arteriors</a>
+        <a href="#potterybarn">Pottery Barn</a>
+    </nav>
 
-<nav>
-<ul>
-<li><a href="#campania">Campania International</a></li>
-<li><a href="#provence">Sunset West Provence</a></li>
-<li><a href="#safavieh">Safavieh Couture</a></li>
-<li><a href="#pamono">Pamono by Chairish</a></li>
-<li><a href="#classic">Classic Home</a></li>
-<li><a href="#bernhardt">Bernhardt</a></li>
-</ul>
-</nav>
+    <div class="sponsor">
+        <a href="https://www.tkqlhce.com/click-101756007-13820670">
+            <img src="https://www.tqlkg.com/image-101756007-13820670" alt="Ad">
+        </a>
+        <a href="https://www.tkqlhce.com/click-101756007-15645778" target="_top">
+<img src="https://www.lduhtrp.net/image-101756007-15645778" width="150" height="120" alt="EdenFantasys.com" border="0"/>
+    </a>
+    <a href="https://www.tkqlhce.com/click-101756007-17016649" target="_top">
+<img src="https://www.tqlkg.com/image-101756007-17016649" width="300" height="250" alt="Lighting New York | Be Proud of the Space You Create | Shop Now" border="0"/></a>
+        <a href="https://www.jdoqocy.com/click-101756007-16942198" target="_top">
+<img src="https://www.lduhtrp.net/image-101756007-16942198" width="245" height="97" alt="" border="0"/></a>
+    </div>
 
-<section id="campania">
-<h3>Campania International</h3>
-<p>
-In an era increasingly defined by lightweight materials and fast production, Campania International stands apart. Its cast stone planters and fountains carry a deliberate sense of weight—both physical and visual—drawing from classical European forms that resist trend cycles. These are pieces designed not for seasonal turnover, but for permanence.
-</p>
-</section>
+    <div class="grid">
 
-<section id="provence">
-<h3>Sunset West Provence</h3>
-<p>
-Sunset West’s Provence collection reflects a broader shift in outdoor design: away from overt luxury and toward something quieter, more tactile. With softened lines and materials built to weather both climate and time, the collection suggests that true comfort outdoors is less about display and more about endurance.
-</p>
-</section>
+        <div class="card" id="jeanprouve">
+            <div class="bar blue"></div>
+            <h3>Jean Prouvé</h3>
+            <p>Few designers bridged engineering and aesthetics as successfully as Jean Prouvé...</p>
+        </div>
 
-<section id="safavieh">
-<h3>Safavieh Couture</h3>
-<p>
-Safavieh Couture leans into contrast—bold forms paired with controlled palettes, statement pieces that stop just short of excess. The collection captures a tension central to contemporary interiors: the desire to stand out, while still belonging within a cohesive space.
-</p>
-</section>
+        <div class="card" id="cassina">
+            <div class="bar red"></div>
+            <h3>Cassina</h3>
+            <p>Cassina occupies a unique position within modern furniture history...</p>
+        </div>
 
-<section id="pamono">
-<h3>Pamono by Chairish</h3>
-<p>
-More archive than storefront, Pamono offers a curated view into the evolution of European design. Now under the Chairish umbrella, the platform brings together dealers and independent sellers, creating a marketplace where each piece carries its own history—an increasingly rare proposition in a landscape dominated by mass production.
-</p>
-</section>
+        <div class="card" id="usm">
+            <div class="bar yellow"></div>
+            <h3>USM</h3>
+            <p>USM is known for its modular system that adapts to changing environments...</p>
+        </div>
 
-<section id="classic">
-<h3>Classic Home</h3>
-<p>
-Classic Home resists the urge to overdefine a space. Its collections—rooted in natural materials and global references—favor subtlety over statement, reflecting a growing preference for interiors that feel accumulated rather than assembled. The emphasis is less on impact, and more on atmosphere.
-</p>
-</section>
+        <div class="card" id="cratebarrel">
+            <div class="bar green"></div>
+            <h3>Crate & Barrel</h3>
+            <p>Crate & Barrel helped define accessible modern design for everyday living...</p>
+        </div>
 
-<section id="bernhardt">
-<h3>Bernhardt</h3>
-<p>
-Few brands illustrate the balancing act of legacy and relevance as clearly as Bernhardt. With decades of history behind it, the company continues to adapt—introducing modern forms without fully abandoning its traditional foundation. The result is a portfolio that speaks to an industry in transition.
-</p>
-</section>
+        <div class="card" id="arteriors">
+            <div class="bar blue"></div>
+            <h3>Arteriors</h3>
+            <p>Arteriors blends sculptural design with functional lighting and furniture...</p>
+        </div>
 
-</main>
+        <div class="card" id="potterybarn">
+            <div class="bar red"></div>
+            <h3>Pottery Barn</h3>
+            <p>Pottery Barn focuses on warm, timeless interiors built for comfort...</p>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
