@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>EXCELLENT PLACE PRODUCTS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+font-family:Inter,sans-serif;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* GOLD GLOW */
+body::before{
+content:"";
+position:fixed;
+top:-300px;
+left:50%;
+transform:translateX(-50%);
+width:1000px;
+height:1000px;
+background:radial-gradient(circle, rgba(213,176,109,.12), transparent 70%);
+pointer-events:none;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+max-width:1100px;
+padding:15px 25px;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.08);
+border-radius:999px;
+display:flex;
+justify-content:space-between;
+z-index:100;
+}
+
+.logo{
+font-weight:700;
+letter-spacing:2px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+opacity:.7;
+margin-left:20px;
+}
+
+/* HERO */
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:url('https://i.imghippo.com/files/DbP5747aKc.jpg') center/cover;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero p{
+opacity:.8;
+margin-top:10px;
+}
+
+/* PRODUCTS GRID */
+.section{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* PRODUCT CARD */
+.card{
+background:#151515;
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card-body{
+padding:20px;
+}
+
+.card h3{
+font-size:1.4rem;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:.95rem;
+opacity:.75;
+margin-bottom:15px;
+}
+
+.price{
+color:#d5b06d;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#d5b06d;
+color:black;
+text-decoration:none;
+border-radius:999px;
+font-weight:700;
+}
+
+/* CTA */
+.cta{
+text-align:center;
+padding:120px 20px;
+background:#161616;
+margin-top:100px;
+}
+
+.cta h2{
+font-size:3rem;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">EXCELLENT PLACE </div>
+<nav class="nav">
+<a href="#products">Products</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Luxury Lightining </h1>
+<p>EXCELLENT PLACE Magazine is bringing the atmosphere of normal home architecture styled by glossy wood furniture , innovated lamp with minerals.</p></p>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+
+<h2 class="section-title">Featured Collection</h2>
+
+<div class="grid">
+
+<!-- PRODUCT 1 -->
+<div class="card">
+<img src="https://media.lightingnewyork.com/vendors/eic/zoom/_1_1_119177ul_0_1_1.jpg">
+
+<div class="card-body">
+<h3>Laurent Chandelier</h3>
+<p>17-light antique brass luxury centerpiece.</p>
+<div class="price">Luxury Statement Piece</div>
+
+<a class="btn"
+href="https://www.jdoqocy.com/click-101756007-17013501?url=https%3A%2F%2Flightingnewyork.com%2Fproduct%2Flighting%2Fceiling-lights%2Fchandeliers%2Feichholtz-laurent-chandeliers-119177ul%2F2954659.html"
+target="_blank">
+View Product
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="card">
+<img src="https://media.lightingnewyork.com/vendors/tch/zoom/mara_chan_white_matte_black.jpg">
+
+<div class="card-body">
+<h3>Visual Comfort Modern Collection Sean Lavin Mara Matte Black Chandelier Ceiling Light</h3>
+<p>Visual Comfort Modern Collection  Sean Lavin Mara inch Matte Black Chandelier Ceiling Light.</p>
+<div class="price">Collector Piece</div>
+
+<a class="btn" href="Visual Comfort Modern Collection 700MRAWB-LED927 Sean Lavin Mara LED 28.8 inch Matte Black Chandelier Ceiling Light, Integrated LED (Product Feed)" target="_blank">
+View Product
+</a>
+</div>
+</div>
+
+
+<!-- CTA --
+
+<footer>
+© 2026 AVENUE52 Magazine
+</footer>
+
+</body>
+</html>
